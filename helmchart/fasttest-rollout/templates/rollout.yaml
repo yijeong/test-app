@@ -1,0 +1,87 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Rollout
+metadata:
+  name: {{ .Values.applicationName }}
+  namespace: {{ .Release.Namespace }}
+  {{- if eq .Values.environment "prod" }}
+  annotations:
+    notifications.argoproj.io/subscribe.on-rollout-aborted.slack: {{ .Values.slackChannel }}
+    notifications.argoproj.io/subscribe.on-analysis-run-failed.slack: {{ .Values.slackChannel }}
+    notifications.argoproj.io/subscribe.on-rollout-completed.slack: {{ .Values.slackChannel }}
+  {{- end }}
+  labels:
+    {{- include "fasttest-rollout.labels" . | nindent 4 }}
+spec:
+  strategy:
+    canary:
+      {{- toYaml .Values.canary | nindent 6 }}
+      analysis:
+        templates:
+          - templateName: monitor-memory
+        args:
+          - name: service-name
+            value: {{ .Values.applicationName }}
+          - name: image-tag
+            value: {{ .Values.image.tag }}
+      pingPong:
+        pingService: {{ .Values.applicationName }}-canary
+        pongService: {{ .Values.applicationName }}-stable
+      trafficRouting:
+        alb:
+          ingress: fasttest-rollout
+          servicePort: {{ .Values.service.port }}
+          rootService: {{ .Values.applicationName }}
+  {{- if not .Values.autoscaling.enabled }}
+  replicas: {{ .Values.replicaCount }}
+  {{- end }}
+  selector:
+    matchLabels:
+      {{- include "fasttest-rollout.selectorLabels" . | nindent 6 }}
+  template:
+    metadata:
+      {{- with .Values.podAnnotations }}
+      annotations:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+      labels:
+        {{- include "fasttest-rollout.selectorLabels" . | nindent 8 }}
+    spec:
+      {{- with .Values.imagePullSecrets }}
+      imagePullSecrets:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+      serviceAccountName: {{ .Values.serviceAccount.name }}
+      securityContext:
+        {{- toYaml .Values.podSecurityContext | nindent 8 }}
+      containers:
+        - name: {{ .Chart.Name }}
+          securityContext:
+            {{- toYaml .Values.securityContext | nindent 12 }}
+          image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
+          imagePullPolicy: {{ .Values.image.pullPolicy }}
+          ports:
+            - name: http
+              containerPort: {{ .Values.service.port }}
+              protocol: TCP
+          livenessProbe:
+            httpGet:
+              path: /
+              port: http
+          readinessProbe:
+            httpGet:
+              path: /
+              port: http
+          resources:
+            {{- toYaml .Values.resources | nindent 12 }}
+      {{- with .Values.nodeSelector }}
+      nodeSelector:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+      {{- with .Values.affinity }}
+      affinity:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+      {{- with .Values.tolerations }}
+      tolerations:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}

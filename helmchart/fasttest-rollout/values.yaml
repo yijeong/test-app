@@ -1,0 +1,97 @@
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+applicationName: "fasttest-rollout"
+# Container image
+image:
+  repository: <업데이트 필요>.dkr.ecr.ap-northeast-2.amazonaws.com/test
+  pullPolicy: IfNotPresent
+  # Overrides the image tag whose default is the chart appVersion.ss
+  tag: "v3"
+imagePullSecrets: []
+nameOverride: ""
+fullnameOverride: ""
+
+serviceAccount:
+  # Specifies whether a service account should be created
+  create: true
+  # Annotations to add to the service account
+  annotations: {}
+  # The name of the service account to use.
+  # If not set and create is true, a name is generated using the fullname template
+  name: ""
+
+# HPA auto scaling
+autoscaling:
+  enabled: true
+  minReplicas: 4
+  maxReplicas: 10
+  targetCPUUtilizationPercentage: 80
+
+# Pod config
+podAnnotations: {}
+
+podSecurityContext: {}
+# fsGroup: 2000
+
+securityContext: {}
+  # capabilities:
+  #   drop:
+  #   - ALL
+  # readOnlyRootFilesystem: true
+  # runAsNonRoot: true
+# runAsUser: 1000
+
+# Resource
+resources:
+   limits:
+     cpu: 100m
+     memory: 128Mi
+   requests:
+     cpu: 100m
+   memory: 128Mi
+
+# Service port
+service:
+  type: ClusterIP
+  port: 8080
+
+
+# Ingress
+ingressLbName: test
+ingressGroupName: test
+listenPorts: "'[{\"HTTP\": 8080}]'"
+albHealthCheck: /
+ingress:
+  enabled: true
+  annotations:
+ingressRule:
+  - http:
+      paths:
+        - path: /
+          pathType: Prefix
+          backend:
+            service:
+              name: fasttest-rollout
+              port:
+                name: use-annotation
+ingressName: fasttest-rollout
+albSubnet: <업데이트 필요>
+
+
+# canary
+canary:
+  maxSurge: "25%"
+  maxUnavailable: 0
+  steps:
+    - setWeight: 20
+    - pause: {}
+    - setWeight: 50
+    - pause: {}
+
+
+nodeSelector: {}
+
+tolerations: []
+
+affinity: {}
+

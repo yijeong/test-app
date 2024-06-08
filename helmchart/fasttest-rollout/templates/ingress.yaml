@@ -1,0 +1,26 @@
+{{- if .Values.ingress.enabled -}}
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: {{ .Values.ingressName }}
+  namespace: {{ .Release.Namespace }}
+  labels:
+    app.kubernetes.io/name: {{ .Values.ingressName }}
+  annotations:
+  {{- with .Values.ingress.annotations }}
+    {{- toYaml . | nindent 4 }}
+  {{- end }}
+    alb.ingress.kubernetes.io/load-balancer-name: {{ .Values.ingressLbName }}
+    alb.ingress.kubernetes.io/group.name: {{ .Values.ingressGroupName }}
+    alb.ingress.kubernetes.io/listen-ports: {{ .Values.listenPorts }}
+    alb.ingress.kubernetes.io/target-type: ip
+    alb.ingress.kubernetes.io/scheme: internet-facing
+    alb.ingress.kubernetes.io/healthcheck-path: {{ .Values.albHealthCheck }}
+    alb.ingress.kubernetes.io/subnets: {{ .Values.albSubnet }}
+spec:
+  ingressClassName: alb
+  {{- with .Values.ingressRule }}
+  rules:
+    {{- toYaml . | nindent 4 }}
+  {{- end }}
+{{- end }}

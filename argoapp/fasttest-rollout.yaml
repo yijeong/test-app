@@ -1,0 +1,42 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  labels:
+    service: fasttest-rollout
+  name: fasttest-rollout
+  namespace: argocd
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/<업데이트 필요>
+    targetRevision: main
+    path: helmchart/fasttest-rollout
+
+    helm:
+      valueFiles:
+        - values.yaml
+      version: v3
+  destination:
+    server: https://<업데이트 필요>
+    namespace: fasttest-rollout
+
+  # 싱크 정책
+  syncPolicy:
+#    automated:
+#      prune: true
+#      selfHeal: true
+    syncOptions:     # Sync options which modifies sync behavior
+      - Validate=true # helm 유효성 검사
+      - CreateNamespace=true
+      - PrunelPropagationPolicy=foreground # prune 을 foregroud
+      - PruneLast=true # 싱크 충돌 방지를 위해, 마지막 리소스 prune 을 true
+      - ApplyOutOfSyncOnly=true # sync 가 안맞는 친구들 apply 허용
+    retry:
+      limit: 5 # 재시도 횟수
+      backoff:
+        duration: 5s # the amount to back off. Default unit is seconds, but could also be a duration (e.g. "2m", "1h")
+        factor: 2 # a factor to multiply the base duration after each failed retry
+        maxDuration: 3m # the maximum amount of time allowed for the backoff strategy
+
