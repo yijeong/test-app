@@ -10,7 +10,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/yijeong/test-app
+    repoURL: https://github.com/<업데이트 필요>
     targetRevision: main
     path: helmchart/fasttest-rollout
 
@@ -19,7 +19,7 @@ spec:
         - values.yaml
       version: v3
   destination:
-    server: https://36F49883CC476DAEF15D726B9DC1B5E7.gr7.ap-northeast-2.eks.amazonaws.com
+    server: https://<업데이트 필요>
     namespace: fasttest-rollout
 
   # 싱크 정책

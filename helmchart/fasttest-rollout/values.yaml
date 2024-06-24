@@ -3,10 +3,10 @@
 applicationName: "fasttest-rollout"
 # Container image
 image:
-  repository: 339712822719.dkr.ecr.ap-northeast-2.amazonaws.com/test
+  repository: <업데이트 필요>.dkr.ecr.ap-northeast-2.amazonaws.com/test
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.ss
-  tag: "v2"
+  tag: "v3"
 imagePullSecrets: []
 nameOverride: ""
 fullnameOverride: ""
@@ -75,7 +75,7 @@ ingressRule:
               port:
                 name: use-annotation
 ingressName: fasttest-rollout
-albSubnet: subnet-0b07d299ee52fcd98, subnet-0742784feadc94533
+albSubnet: <업데이트 필요>
 
 
 # canary
