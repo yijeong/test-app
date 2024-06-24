@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a5bb77b5-b205-492a-9a21-4520b00192c5" name="Changes" comment="이미지 태그 변경">
+      <change beforePath="$PROJECT_DIR$/helmchart/fasttest-rollout/values.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/helmchart/fasttest-rollout/values.yaml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="bf91aeb4-3956-47a1-acfb-6a9b0e3ef86e" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2hapru4t8JhITcxwB6VZWmfXnQd" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;TF_FMT&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/kyoungduk/work/test-app&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a5bb77b5-b205-492a-9a21-4520b00192c5" name="Changes" comment="" />
+      <created>1717842244777</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1717842244777</updated>
+    </task>
+    <task id="LOCAL-00001" summary="commit">
+      <created>1717842272931</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1717842272931</updated>
+    </task>
+    <task id="LOCAL-00002" summary="commit">
+      <created>1717842341516</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1717842341516</updated>
+    </task>
+    <task id="LOCAL-00003" summary="commit">
+      <created>1717842369563</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1717842369563</updated>
+    </task>
+    <task id="LOCAL-00004" summary="initial commit">
+      <created>1717843719097</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1717843719097</updated>
+    </task>
+    <task id="LOCAL-00005" summary="initial commit">
+      <created>1717844038748</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1717844038748</updated>
+    </task>
+    <task id="LOCAL-00006" summary="v2 commit">
+      <created>1717845202903</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1717845202903</updated>
+    </task>
+    <task id="LOCAL-00007" summary="server change">
+      <created>1719220465218</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1719220465218</updated>
+    </task>
+    <task id="LOCAL-00008" summary="server change">
+      <created>1719220654526</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1719220654526</updated>
+    </task>
+    <task id="LOCAL-00009" summary="test">
+      <created>1719225172441</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1719225172441</updated>
+    </task>
+    <task id="LOCAL-00010" summary="rollout 어플리케이션 생성">
+      <created>1719225442206</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1719225442206</updated>
+    </task>
+    <task id="LOCAL-00011" summary="test">
+      <created>1719225719988</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1719225719988</updated>
+    </task>
+    <task id="LOCAL-00012" summary="test">
+      <created>1719225757338</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1719225757338</updated>
+    </task>
+    <task id="LOCAL-00013" summary="rollout 어플리케이션 생성">
+      <created>1719225954339</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1719225954339</updated>
+    </task>
+    <task id="LOCAL-00014" summary="canary step 변경">
+      <created>1719230859894</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1719230859894</updated>
+    </task>
+    <task id="LOCAL-00015" summary="canary step 변경">
+      <created>1719232690977</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1719232690977</updated>
+    </task>
+    <task id="LOCAL-00016" summary="canary step 변경">
+      <created>1719232707091</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1719232707091</updated>
+    </task>
+    <task id="LOCAL-00017" summary="canary step 변경">
+      <created>1719232994682</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1719232994682</updated>
+    </task>
+    <task id="LOCAL-00018" summary="canary step 변경">
+      <created>1719233113769</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1719233113769</updated>
+    </task>
+    <task id="LOCAL-00019" summary="canary step 변경">
+      <created>1719233486763</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1719233486763</updated>
+    </task>
+    <task id="LOCAL-00020" summary="이미지 태그 변경">
+      <created>1719237621265</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1719237621265</updated>
+    </task>
+    <task id="LOCAL-00021" summary="이미지 태그 변경">
+      <created>1719237740324</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1719237740324</updated>
+    </task>
+    <task id="LOCAL-00022" summary="이미지 태그 변경">
+      <created>1719237789770</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1719237789770</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="commit" />
+    <MESSAGE value="initial commit" />
+    <MESSAGE value="v2 commit" />
+    <MESSAGE value="server change" />
+    <MESSAGE value="test" />
+    <MESSAGE value="rollout 어플리케이션 생성" />
+    <MESSAGE value="canary step 변경" />
+    <MESSAGE value="이미지 태그 변경" />
+    <option name="LAST_COMMIT_MESSAGE" value="이미지 태그 변경" />
+  </component>
+</project>
