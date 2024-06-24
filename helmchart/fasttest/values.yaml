@@ -79,7 +79,7 @@ ingressRule:
               port:
                 number: 8080
 ingressName: fasttest
-albSubnet: subnet-05c3fc5c43926c74e, subnet-09d612a39d584199e
+albSubnet: subnet-0b07d299ee52fcd98, subnet-0742784feadc94533
 
 nodeSelector: {}
 
