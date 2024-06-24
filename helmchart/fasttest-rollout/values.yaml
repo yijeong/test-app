@@ -6,7 +6,7 @@ image:
   repository: 339712822719.dkr.ecr.ap-northeast-2.amazonaws.com/test
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.ss
-  tag: "v1"
+  tag: "v3"
 imagePullSecrets: []
 nameOverride: ""
 fullnameOverride: ""
