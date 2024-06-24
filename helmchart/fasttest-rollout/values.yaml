@@ -84,8 +84,7 @@ canary:
   maxUnavailable: 0
   steps:
     - setWeight: 20
-    - pause:
-        duration: 10s
+    - pause: {}
     - setWeight: 50
     - pause: {}
 
