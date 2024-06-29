@@ -22,4 +22,4 @@ spec:
         - key: X-Scope-Org-ID
           value: tenant_a
         query: |
-          container_memory_usage_bytes{container="{{args.service-name}}"}/container_spec_memory_limit_bytes{container="{{args.service-name}}"}
+          {{ `container_memory_usage_bytes{container="{{args.service-name}}"}/container_spec_memory_limit_bytes{container="{{args.service-name}}"}` }}
