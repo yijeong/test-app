@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a5bb77b5-b205-492a-9a21-4520b00192c5" name="Changes" comment="이미지 태그 변경">
-      <change beforePath="$PROJECT_DIR$/helmchart/fasttest-rollout/values.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/helmchart/fasttest-rollout/values.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -202,7 +202,35 @@
       <option name="project" value="LOCAL" />
       <updated>1719237789770</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="이미지 태그 변경">
+      <created>1719238399565</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1719238399565</updated>
+    </task>
+    <task id="LOCAL-00024" summary="이미지 태그 변경">
+      <created>1719238429495</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1719238429495</updated>
+    </task>
+    <task id="LOCAL-00025" summary="이미지 태그 변경">
+      <created>1719238568845</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1719238568845</updated>
+    </task>
+    <task id="LOCAL-00026" summary="이미지 태그 변경">
+      <created>1719239582788</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1719239582788</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

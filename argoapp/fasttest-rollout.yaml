@@ -19,7 +19,7 @@ spec:
         - values.yaml
       version: v3
   destination:
-    server: https://36F49883CC476DAEF15D726B9DC1B5E7.gr7.ap-northeast-2.eks.amazonaws.com
+    server: https://0EB65B5E3C1CB681308331F7E1B0EF25.gr7.ap-northeast-2.eks.amazonaws.com
     namespace: fasttest-rollout
 
   # 싱크 정책
