@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a5bb77b5-b205-492a-9a21-4520b00192c5" name="Changes" comment="이미지 태그 변경">
+    <list default="true" id="a5bb77b5-b205-492a-9a21-4520b00192c5" name="Changes" comment="analysistemplate 추가">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -17,6 +17,9 @@
   </component>
   <component name="GithubDefaultAccount">
     <option name="defaultAccountId" value="bf91aeb4-3956-47a1-acfb-6a9b0e3ef86e" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/helmchart/fasttest-rollout/templates/rollout.yaml" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -230,7 +233,35 @@
       <option name="project" value="LOCAL" />
       <updated>1719239582788</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="이미지 태그 변경">
+      <created>1719629539521</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1719629539521</updated>
+    </task>
+    <task id="LOCAL-00028" summary="이미지 태그 변경">
+      <created>1719629765637</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1719629765637</updated>
+    </task>
+    <task id="LOCAL-00029" summary="이미지 태그 변경">
+      <created>1719629805409</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1719629805409</updated>
+    </task>
+    <task id="LOCAL-00030" summary="analysistemplate 추가">
+      <created>1719638179994</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1719638179994</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -242,6 +273,7 @@
     <MESSAGE value="rollout 어플리케이션 생성" />
     <MESSAGE value="canary step 변경" />
     <MESSAGE value="이미지 태그 변경" />
-    <option name="LAST_COMMIT_MESSAGE" value="이미지 태그 변경" />
+    <MESSAGE value="analysistemplate 추가" />
+    <option name="LAST_COMMIT_MESSAGE" value="analysistemplate 추가" />
   </component>
 </project>
