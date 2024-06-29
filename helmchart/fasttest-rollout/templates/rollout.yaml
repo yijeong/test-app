@@ -15,14 +15,6 @@ spec:
   strategy:
     canary:
       {{- toYaml .Values.canary | nindent 6 }}
-#      analysis:
-#        templates:
-#          - templateName: monitor-memory
-#        args:
-#          - name: service-name
-#            value: {{ .Values.applicationName }}
-#          - name: image-tag
-#            value: {{ .Values.image.tag }}
       pingPong:
         pingService: {{ .Values.applicationName }}-canary
         pongService: {{ .Values.applicationName }}-stable
